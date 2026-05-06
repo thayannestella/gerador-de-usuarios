@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Aplicativo para gerar usuários aleatórios e salvá-los nos favoritos. Interface responsiva, PWA e recursos de hardware integrados." />
+  <meta name="theme-color" content="#0f172a" />
+  
+  <title>Gerador de Usuários</title>
+  
+  <link rel="manifest" href="./manifest.json" />
+  <link rel="icon" href="./icon-192.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="./icon-192.svg">
+  
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Lista de Usuários</h1>
+    <div id="location-msg">Buscando localização...</div>
+  </header>
+
+  <main>
+    <div class="controls">
+      <button class="btn" aria-label="Gerar Novos Usuários" onclick="carregarUsuarios()">
+        Gerar Novos Usuários
+      </button>
+    </div>
+
+    <section id="container" class="container" aria-live="polite">
+      <!-- Os cards dos usuários serão inseridos aqui pelo app.js -->
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <p><strong>Nome:</strong> Thayanne S. B. Rodrigues</p>
+      <p><strong>Sala:</strong> TADS047 - Noite</p>
+    </div>
+  </footer>
+
+  <script src="./app.js"></script>
+</body>
+</html>
